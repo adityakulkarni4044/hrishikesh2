@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* A small, professional base layer. */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-orange-50 text-slate-900 antialiased;
+}
+
+/* nicer default selection */
+::selection {
+  background: rgba(251, 146, 60, 0.25);
+}
+
+/* subtle warm background */
+.nw-bg {
+  background-image:
+    radial-gradient(rgba(251, 146, 60, 0.22) 1px, transparent 0),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 247, 237, 1));
+  background-size: 22px 22px, cover;
+  background-position: -8px -8px, center;
+}
